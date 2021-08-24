@@ -1,0 +1,138 @@
+#app{
+    overflow: scroll;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+.movie-container{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 672px;
+    margin: 0 auto;
+
+}
+
+.movie{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 64px;
+}
+
+.poster-container{
+    position: absolute;
+    left: -64px;
+    width: 281px;
+    height: 396px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.content{
+    width: 608px;
+    height: 500px;
+    background-color: #333;
+    border-radius: 15px;
+    color: #fff;
+    padding: 64px 0 0 266px;
+    box-sizing: border-box;
+}
+
+
+.content-type span{
+    color: #bdbdbd;
+}
+
+.content-type span + span::before{
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 13px;
+    background-color: #bdbdbd;
+    margin: 0 7px 1px 3px;
+}
+
+.content-title{
+    margin: 13px 0 114px 0;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 46px;
+}
+
+.content-button{
+    display: flex;
+    margin-bottom: 22px;
+}
+
+.content-button button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #ffffff;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+.button-recommend .icon-good{
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 29px;
+    height: 29px;
+    background:center / contain url(/src/img/thumbsup.png) no-repeat; 
+}
+
+.button-recommend.on{
+    background-color: #2f80ed;
+}
+   
+.button-recommend.on .icon-good{
+    background-image: url(/src/img/thumbsup_2.png);
+}
+
+.button-love .icon-love{
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 29px;
+    height: 29px;
+    background: center / contain url(/src/img/heart.png) no-repeat;
+}
+   
+.button-love.on{
+    background-color: #EB5757;
+}
+
+.button-love.on .icon-love{
+    background-image: url(/src/img/heart_2.png);
+}
+
+.star-average{
+    display: block;
+    margin-bottom: 16px;
+}
+
+.star-point-container{
+    display: flex;
+    align-items: center;
+}
+
+.star-background{
+    display: flex;
+
+}
+
+.star-background img{
+    width: 51px;
+}
+
+.icon-remove-star{
+    width: 22px;
+    height: 22px;
+    margin-left: 11px;
+}
+
